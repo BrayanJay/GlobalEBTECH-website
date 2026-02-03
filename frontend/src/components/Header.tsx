@@ -4,6 +4,7 @@ import { Phone, Menu, X } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname, useRouter } from 'next/navigation';
 
 export function Header() {
@@ -53,11 +54,16 @@ export function Header() {
               whileHover={{ scale: 1.05 }}
               className="flex items-center gap-2 cursor-pointer"
             >
-              <div className="bg-gradient-to-br from-teal-600 to-cyan-600 rounded-xl p-2 shadow-lg">
-                <Phone className="w-5 h-5 text-white" />
-              </div>
-              <span className="text-xl font-semibold bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent">
-                CallPro Solutions
+              <Image 
+                src="/global-ebtech-logo.svg" 
+                alt="Global EBTECH Logo" 
+                width={40} 
+                height={40}
+                className="w-10 h-10"
+              />
+              
+              <span className="text-xl font-bold bg-gradient-to-r from-teal-800 to-cyan-700 bg-clip-text text-transparent">
+                GLOBAL EBTECH
               </span>
             </motion.div>
           </Link>
@@ -104,7 +110,7 @@ export function Header() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => handleNavClick('/contact', '#contact-form')}
-              className="bg-gradient-to-r from-teal-600 to-cyan-600 text-white px-6 py-2 rounded-lg shadow-lg hover:shadow-xl transition-all"
+              className="bg-gradient-to-r from-teal-600 to-cyan-600 text-white font-semibold px-8 py-2 rounded-lg shadow-lg hover:shadow-xl transition-all"
             >
               Call Now
             </motion.button>

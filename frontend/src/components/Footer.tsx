@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { Phone, Mail, Linkedin, Twitter, Facebook } from 'lucide-react';
 import { motion } from 'motion/react';
+import Image from 'next/image';
 
 export default function Footer() {
   const router = useRouter();
@@ -25,10 +26,17 @@ export default function Footer() {
               className="flex items-center gap-2 cursor-pointer"
               onClick={() => handleNavigation('/')}
             >
-              <div className="bg-gradient-to-br from-cyan-600 to-teal-600 rounded-xl p-2 shadow-lg">
-                <Phone className="w-5 h-5" />
-              </div>
-              <span className="text-xl font-semibold">CallPro Solutions</span>
+              <Image 
+                src="/global-ebtech-logo.svg" 
+                alt="Global EBTECH Logo" 
+                width={40} 
+                height={40}
+                className="w-10 h-10"
+                />
+                            
+              <span className="text-xl font-bold bg-gradient-to-r from-teal-50 to-cyan-50 bg-clip-text text-transparent">
+                GLOBAL EBTECH
+              </span>
             </motion.div>
 
             <p className="text-gray-400 text-sm">

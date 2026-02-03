@@ -19,7 +19,7 @@ export default function Features() {
   return (
     <section
       id="features"
-      className="py-20 bg-gradient-to-br from-gray-50 to-teal-50"
+      className="py-20 bg-gradient-to-br from-gray-50 to-teal-50 overflow-hidden"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
