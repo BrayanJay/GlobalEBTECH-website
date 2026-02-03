@@ -106,7 +106,7 @@ export function Header() {
               onClick={() => handleNavClick('/contact', '#contact-form')}
               className="bg-gradient-to-r from-teal-600 to-cyan-600 text-white px-6 py-2 rounded-lg shadow-lg hover:shadow-xl transition-all"
             >
-              Get Started
+              Call Now
             </motion.button>
           </div>
 
@@ -168,7 +168,7 @@ export function Header() {
                   onClick={() => handleNavClick('/contact', '#contact-form')}
                   className="bg-gradient-to-r from-teal-600 to-cyan-600 text-white px-6 py-2 rounded-lg text-center shadow-lg"
                 >
-                  Get Started
+                  Call Now
                 </motion.button>
               </div>
             </motion.div>

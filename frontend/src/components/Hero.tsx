@@ -1,24 +1,18 @@
 'use client';
 
 import Image from 'next/image';
-import Link from 'next/link';
-import { ArrowRight, Phone, Sparkles } from 'lucide-react';
+import { ArrowRight, Sparkles } from 'lucide-react';
 import { motion } from 'motion/react';
 
 export default function Hero() {
   return (
-    <section className="relative py-20 lg:py-32 overflow-hidden">
-      {/* Animated background elements */}
-      <motion.div
-        animate={{ scale: [1, 1.2, 1], rotate: [0, 90, 0] }}
-        transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
-        className="absolute top-0 right-0 w-96 h-96 bg-blue-200 rounded-full blur-3xl opacity-30"
-      />
+    <section className="relative py-20 lg:py-24 overflow-hidden">
+
 
       <motion.div
         animate={{ scale: [1, 1.3, 1], rotate: [0, -90, 0] }}
         transition={{ duration: 15, repeat: Infinity, ease: 'linear' }}
-        className="absolute bottom-0 left-0 w-96 h-96 bg-purple-200 rounded-full blur-3xl opacity-30"
+        className="absolute bottom-0 left-0 w-96 h-96 rounded-full blur-3xl opacity-30"
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -46,7 +40,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-4 py-2 rounded-full text-sm shadow-lg"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-teal-600 to-cyan-600 text-white px-4 py-2 rounded-full text-sm shadow-lg"
             >
               <Sparkles className="w-4 h-4" />
               Trusted by 500+ Companies
@@ -59,7 +53,7 @@ export default function Hero() {
               className="text-4xl sm:text-5xl lg:text-6xl text-gray-900 leading-tight"
             >
               Professional Call Center{' '}
-              <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent">
                 Solutions
               </span>
             </motion.h1>
@@ -81,26 +75,15 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="flex flex-col sm:flex-row gap-4"
             >
-              <Link href="/contact">
-                <motion.span
+                <motion.a
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-4 rounded-xl hover:shadow-2xl transition-all flex items-center justify-center gap-2 group cursor-pointer"
-                >
-                  Get Started
+                  href="tel:000000"
+                  className="bg-gradient-to-r from-teal-600 to-cyan-600 text-white font-medium px-16 py-4 rounded-xl hover:shadow-2xl transition-all flex items-center justify-center gap-2 group cursor-pointer">
+                  Call Now
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </motion.span>
-              </Link>
+                </motion.a>
 
-              <motion.a
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                href="tel:1-800-CALLPRO"
-                className="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-xl hover:bg-blue-50 transition-all flex items-center justify-center gap-2"
-              >
-                <Phone className="w-5 h-5" />
-                1-800-CALLPRO
-              </motion.a>
             </motion.div>
           </div>
 
