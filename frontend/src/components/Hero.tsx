@@ -7,8 +7,6 @@ import { motion } from 'motion/react';
 export default function Hero() {
   return (
     <section className="relative py-20 lg:py-24 overflow-hidden">
-
-
       <motion.div
         animate={{ scale: [1, 1.3, 1], rotate: [0, -90, 0] }}
         transition={{ duration: 15, repeat: Infinity, ease: 'linear' }}

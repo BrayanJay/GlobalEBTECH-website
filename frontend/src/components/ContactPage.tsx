@@ -8,59 +8,45 @@ const contactMethods = [
   {
     icon: Phone,
     title: 'Call Us',
-    info: '1-800-CALLPRO (225-5776)',
-    subInfo: 'Available 24/7',
-    gradient: 'from-blue-500 to-indigo-500',
-    link: 'tel:1-800-CALLPRO',
+    info: '00000',
+    subInfo: 'During business hours',
+    gradient: 'from-teal-500 to-cyan-500',
+    link: 'tel:00000',
   },
   {
     icon: Mail,
     title: 'Email Us',
-    info: 'info@callprosolutions.com',
+    info: 'hr@globalebtech.com',
     subInfo: 'We respond within 24 hours',
-    gradient: 'from-purple-500 to-pink-500',
-    link: 'mailto:info@callprosolutions.com',
+    gradient: 'from-blue-500 to-pink-500',
+    link: 'mailto:hr@globalebtech.com',
   },
   {
     icon: MessageSquare,
     title: 'Live Chat',
     info: 'Chat with our team',
-    subInfo: 'Mon-Fri: 9am-6pm EST',
+    subInfo: 'Mon-Fri: 11am-8pm EST',
     gradient: 'from-green-500 to-emerald-500',
     link: '#',
   },
   {
     icon: Headphones,
     title: 'Support',
-    info: 'support@callprosolutions.com',
+    info: 'support@globalebtech.com',
     subInfo: 'Technical assistance',
     gradient: 'from-orange-500 to-red-500',
-    link: 'mailto:support@callprosolutions.com',
+    link: 'mailto:support@globalebtech.com',
   },
 ];
 
 const offices = [
   {
-    city: 'New York (Headquarters)',
-    address: '123 Business Park Drive, Suite 500',
-    cityState: 'New York, NY 10001',
-    phone: '+1 (212) 555-0100',
-    email: 'newyork@callprosolutions.com',
-  },
-  {
-    city: 'Los Angeles',
-    address: '456 Tech Boulevard, Floor 12',
-    cityState: 'Los Angeles, CA 90028',
-    phone: '+1 (310) 555-0200',
-    email: 'losangeles@callprosolutions.com',
-  },
-  {
-    city: 'Chicago',
-    address: '789 Commerce Street, Suite 300',
-    cityState: 'Chicago, IL 60601',
-    phone: '+1 (312) 555-0300',
-    email: 'chicago@callprosolutions.com',
-  },
+    city: 'Dehiwala (Head Office)',
+    address: '85C, 1/2, Galle Road, Dehiwala',
+    cityState: '10350, Western Province, Sri Lanka',
+    phone: '00000',
+    email: 'hr@globalebtech.com',
+  }
 ];
 
 export default function ContactPage() {
@@ -89,7 +75,7 @@ export default function ContactPage() {
   return (
     <main className="min-h-screen pt-16">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-600 py-20 lg:py-32 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-teal-600 via-cyan-600 to-blue-600 py-20 lg:py-32 overflow-hidden">
         <motion.div
           animate={{ scale: [1, 1.2, 1], rotate: [0, 90, 0] }}
           transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
@@ -105,10 +91,10 @@ export default function ContactPage() {
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="text-center text-white space-y-6">
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.2 }} className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm">
               <Globe className="w-4 h-4" />
-              We're Here to Help 24/7
+              We're Here to Help
             </motion.div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl leading-tight">Get In Touch With Us</h1>
-            <p className="text-lg text-blue-100 max-w-2xl mx-auto">
+            <p className="text-lg text-teal-100 max-w-2xl mx-auto">
               Have questions about our services? We'd love to hear from you. Our team is ready to help you find the perfect solution for your business.
             </p>
           </motion.div>
@@ -119,7 +105,7 @@ export default function ContactPage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl text-gray-900 mb-4">How Can We Help?</h2>
+            <h2 className="text-3xl sm:text-4xl text-gray-900 font-semibold mb-4">How Can We Help?</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">Choose your preferred way to reach us</p>
           </motion.div>
 
@@ -133,7 +119,7 @@ export default function ContactPage() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 whileHover={{ y: -8 }}
-                className="bg-gradient-to-br from-gray-50 to-blue-50 p-6 rounded-2xl border-2 border-gray-200 hover:border-blue-300 hover:shadow-xl transition-all text-center group"
+                className="bg-gradient-to-br from-gray-50 to-teal-50 p-6 rounded-2xl border-2 border-gray-200 hover:border-teal-300 hover:shadow-xl transition-all text-center group"
               >
                 <motion.div
                   whileHover={{ rotate: 360 }}
@@ -152,7 +138,7 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Form & Info */}
-      <section id='contact-form' className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+      <section id='contact-form' className="py-20 bg-gradient-to-br from-gray-50 to-teal-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Form */}
@@ -171,7 +157,7 @@ export default function ContactPage() {
                       required
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-600 transition-all"
                       placeholder="John Doe"
                     />
                   </div>
@@ -186,7 +172,7 @@ export default function ContactPage() {
                       required
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-600 transition-all"
                       placeholder="john@company.com"
                     />
                   </div>
@@ -203,13 +189,13 @@ export default function ContactPage() {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all"
-                      placeholder="+1 (555) 000-0000"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-600 transition-all"
+                      placeholder="0771234567"
                     />
                   </div>
                   <div>
                     <label htmlFor="company" className="block text-sm text-gray-700 mb-2 font-medium">
-                      Company Name
+                      Company Name (Optional)
                     </label>
                     <input
                       type="text"
@@ -217,12 +203,13 @@ export default function ContactPage() {
                       name="company"
                       value={formData.company}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-600 transition-all"
                       placeholder="Your Company"
                     />
                   </div>
                 </div>
 
+                {/*
                 <div>
                   <label htmlFor="service" className="block text-sm text-gray-700 mb-2 font-medium">
                     Service Interested In
@@ -232,7 +219,7 @@ export default function ContactPage() {
                     name="service"
                     value={formData.service}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-600 transition-all"
                   >
                     <option value="">Select a service</option>
                     <option value="inbound">Inbound Support</option>
@@ -243,6 +230,7 @@ export default function ContactPage() {
                     <option value="24-7">24/7 Support</option>
                   </select>
                 </div>
+                */}
 
                 <div>
                   <label htmlFor="message" className="block text-sm text-gray-700 mb-2 font-medium">
@@ -255,7 +243,7 @@ export default function ContactPage() {
                     value={formData.message}
                     onChange={handleChange}
                     rows={5}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-600 transition-all"
                     placeholder="Tell us about your needs..."
                   />
                 </div>
@@ -264,7 +252,7 @@ export default function ContactPage() {
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                   type="submit"
-                  className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-4 rounded-xl hover:shadow-2xl transition-all flex items-center justify-center gap-2 group"
+                  className="w-full bg-gradient-to-r from-teal-600 to-cyan-600 text-white px-6 py-4 rounded-xl hover:shadow-2xl transition-all flex items-center justify-center gap-2 group"
                 >
                   Send Message
                   <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -274,26 +262,18 @@ export default function ContactPage() {
 
             {/* Business Hours & Quick Info */}
             <motion.div initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="space-y-6">
-              <div className="bg-gradient-to-br from-blue-600 to-indigo-600 text-white p-8 rounded-2xl shadow-xl">
+              <div className="bg-gradient-to-br from-teal-600 to-cyan-600 text-white p-8 rounded-2xl shadow-xl">
                 <div className="flex items-center gap-3 mb-6">
                   <Clock className="w-8 h-8" />
                   <h3 className="text-2xl font-semibold">Business Hours</h3>
                 </div>
                 <div className="space-y-3">
                   <div className="flex justify-between items-center pb-3 border-b border-white/20">
-                    <span className="text-blue-100">Monday - Friday:</span>
-                    <span className="font-semibold">24/7 Available</span>
-                  </div>
-                  <div className="flex justify-between items-center pb-3 border-b border-white/20">
-                    <span className="text-blue-100">Saturday:</span>
-                    <span className="font-semibold">24/7 Available</span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-blue-100">Sunday:</span>
-                    <span className="font-semibold">24/7 Available</span>
+                    <span className="text-teal-100">Monday - Friday:</span>
+                    <span className="font-semibold">11.00AM to 08.00PM</span>
                   </div>
                 </div>
-                <p className="text-sm text-blue-100 mt-6 italic">
+                <p className="text-sm text-teal-100 mt-6 italic">
                   We're always here to help! Our team works around the clock to support your business.
                 </p>
               </div>
@@ -311,23 +291,23 @@ export default function ContactPage() {
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <div className="bg-blue-100 p-2 rounded-lg">
-                      <Mail className="w-5 h-5 text-blue-600" />
+                    <div className="bg-teal-100 p-2 rounded-lg">
+                      <Mail className="w-5 h-5 text-teal-600" />
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900">Emails</h4>
                       <p className="text-sm text-gray-600">Response within 24 hours</p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-3">
-                    <div className="bg-purple-100 p-2 rounded-lg">
-                      <MessageSquare className="w-5 h-5 text-purple-600" />
+                  {/* <div className="flex items-start gap-3">
+                    <div className="bg-blue-100 p-2 rounded-lg">
+                      <MessageSquare className="w-5 h-5 text-blue-600" />
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900">Live Chat</h4>
                       <p className="text-sm text-gray-600">Average response time: 2 minutes</p>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </motion.div>
@@ -345,13 +325,13 @@ export default function ContactPage() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl sm:text-4xl text-gray-900 mb-4">Our Locations</h2>
+            <h2 className="text-3xl sm:text-4xl text-gray-900 font-semibold mb-4">Our Location</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Visit us at any of our offices across the country
+              Visit us at any time during the business hours mentioned above.
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div>
             {offices.map((office, index) => (
               <motion.div
                 key={index}
@@ -360,24 +340,38 @@ export default function ContactPage() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 whileHover={{ y: -8 }}
-                className="bg-gradient-to-br from-gray-50 to-blue-50 p-6 rounded-2xl border border-gray-200 hover:shadow-xl transition-all"
+                className="flex flex-col lg:flex-row gap-6 lg:gap-10 bg-gradient-to-br from-gray-50 to-teal-50 p-6 rounded-2xl border border-gray-200 hover:shadow-xl transition-all"
               >
-                <div className="bg-gradient-to-br from-blue-500 to-indigo-600 w-12 h-12 rounded-xl flex items-center justify-center mb-4">
-                  <MapPin className="w-6 h-6 text-white" />
-                </div>
-                <h3 className="text-xl text-gray-900 mb-3 font-semibold">{office.city}</h3>
-                <div className="space-y-2 text-sm text-gray-600">
-                  <p>{office.address}</p>
-                  <p>{office.cityState}</p>
-                  <p className="flex items-center gap-2 pt-2">
-                    <Phone className="w-4 h-4" />
-                    {office.phone}
-                  </p>
-                  <p className="flex items-center gap-2">
-                    <Mail className="w-4 h-4" />
-                    {office.email}
-                  </p>
-                </div>
+                  <div className="lg:w-1/3">
+                    <div className="bg-gradient-to-br from-teal-500 to-cyan-600 w-12 h-12 rounded-xl flex items-center justify-center mb-4">
+                      <MapPin className="w-6 h-6 text-white" />
+                    </div>
+                    <h3 className="text-xl text-gray-900 mb-3 font-semibold">{office.city}</h3>
+                    <div className="space-y-2 text-sm text-gray-600">
+                      <p>{office.address}</p>
+                      <p>{office.cityState}</p>
+                      <p className="flex items-center gap-2 pt-2">
+                        <Phone className="w-4 h-4" />
+                        {office.phone}
+                      </p>
+                      <p className="flex items-center gap-2">
+                        <Mail className="w-4 h-4" />
+                        {office.email}
+                      </p>
+                    </div>
+                  </div>
+                  <div className="lg:w-2/3">
+                      <div className="relative w-full h-64 lg:h-96 rounded-xl overflow-hidden">
+                        <iframe 
+                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d294.42877971285714!2d79.86591631900968!3d6.849099922291273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25b00267ff08f%3A0x1ce50f065b96bd9e!2sGLOBAL%20EBTECH!5e0!3m2!1sen!2slk!4v1770102766867!5m2!1sen!2slk" 
+                          className="absolute inset-0 w-full h-full"
+                          style={{border:0}} 
+                          allowFullScreen 
+                          loading="lazy" 
+                          referrerPolicy="no-referrer-when-downgrade"
+                        />
+                      </div>
+                    </div>
               </motion.div>
             ))}
           </div>
@@ -385,7 +379,7 @@ export default function ContactPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-600">
+      <section className="py-20 bg-gradient-to-br from-teal-600 via-cyan-600 to-blue-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -395,24 +389,24 @@ export default function ContactPage() {
             className="text-white space-y-6"
           >
             <h2 className="text-3xl sm:text-4xl mb-4">Ready to Get Started?</h2>
-            <p className="text-xl text-blue-100 mb-8">
+            <p className="text-xl text-teal-100 mb-8">
               Let's discuss how our call center solutions can help your business grow
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="tel:1-800-CALLPRO"
-                className="bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold hover:shadow-2xl transition-all inline-flex items-center justify-center gap-2"
+                href="tel:00000"
+                className="bg-white text-teal-600 px-16 py-4 rounded-xl font-semibold hover:shadow-2xl transition-all inline-flex items-center justify-center gap-2"
               >
                 <Phone className="w-5 h-5" />
-                Call Now: 1-800-CALLPRO
+                Call Now
               </motion.a>
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="mailto:info@callprosolutions.com"
-                className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/10 transition-all inline-flex items-center justify-center gap-2"
+                href="mailto:hr@globalebtech.com"
+                className="border-2 border-white text-white px-16 py-4 rounded-xl font-semibold hover:bg-white/10 transition-all inline-flex items-center justify-center gap-2"
               >
                 <Mail className="w-5 h-5" />
                 Email Us
