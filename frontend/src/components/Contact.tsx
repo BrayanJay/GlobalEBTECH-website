@@ -28,7 +28,7 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+    <section id="contact" className="py-20 bg-gradient-to-br from-cyan-50 to-teal-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -58,12 +58,12 @@ export function Contact() {
                   whileHover={{ x: 5 }}
                   className="flex items-start gap-4 p-4 rounded-xl hover:bg-white/50 transition-all"
                 >
-                  <div className="bg-gradient-to-br from-blue-500 to-indigo-600 p-3 rounded-xl shadow-lg">
+                  <div className="bg-gradient-to-br from-teal-500 to-cyan-600 p-3 rounded-xl shadow-lg">
                     <Phone className="w-6 h-6 text-white" />
                   </div>
                   <div>
                     <div className="text-gray-900 font-semibold">Phone</div>
-                    <div className="text-gray-600">1-800-CALLPRO (225-5776)</div>
+                    <div className="text-gray-600">000000</div>
                   </div>
                 </motion.div>
                 <motion.div
@@ -75,7 +75,7 @@ export function Contact() {
                   </div>
                   <div>
                     <div className="text-gray-900 font-semibold">Email</div>
-                    <div className="text-gray-600">info@callprosolutions.com</div>
+                    <div className="text-gray-600">hr@globalebtech.com</div>
                   </div>
                 </motion.div>
                 <motion.div
@@ -88,9 +88,9 @@ export function Contact() {
                   <div>
                     <div className="text-gray-900 font-semibold">Address</div>
                     <div className="text-gray-600">
-                      123 Business Park Drive<br />
-                      Suite 500<br />
-                      New York, NY 10001
+                      85C, 1/2<br />
+                      Galle Road<br />
+                      Dehiwala, Sri Lanka
                     </div>
                   </div>
                 </motion.div>
@@ -102,20 +102,16 @@ export function Contact() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="bg-gradient-to-br from-blue-600 to-indigo-600 text-white p-8 rounded-2xl shadow-xl"
+              className="bg-gradient-to-br from-teal-600 to-cyan-600 text-white p-8 rounded-2xl shadow-xl"
             >
               <h3 className="text-xl mb-2">Business Hours</h3>
               <div className="space-y-2">
                 <div className="flex justify-between">
                   <span>Monday - Friday:</span>
-                  <span className="font-semibold">24/7</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Saturday - Sunday:</span>
-                  <span className="font-semibold">24/7</span>
+                  <span className="font-semibold">11.00 A.M – 08.00 P.M</span>
                 </div>
               </div>
-              <p className="text-sm text-blue-100 mt-4">
+              <p className="text-sm text-teal-100 mt-4">
                 We're always here to help!
               </p>
             </motion.div>
@@ -140,7 +136,7 @@ export function Contact() {
                   required
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-600 transition-all"
                   placeholder="John Doe"
                 />
               </div>
@@ -155,7 +151,7 @@ export function Contact() {
                   required
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-600 transition-all"
                   placeholder="john@company.com"
                 />
               </div>
@@ -169,7 +165,7 @@ export function Contact() {
                   name="company"
                   value={formData.company}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-600 transition-all"
                   placeholder="Your Company"
                 />
               </div>
@@ -184,7 +180,7 @@ export function Contact() {
                   value={formData.message}
                   onChange={handleChange}
                   rows={4}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-600 transition-all"
                   placeholder="Tell us about your needs..."
                 />
               </div>
@@ -192,7 +188,7 @@ export function Contact() {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 type="submit"
-                className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-4 rounded-xl hover:shadow-2xl transition-all flex items-center justify-center gap-2 group"
+                className="w-full bg-gradient-to-r from-teal-600 to-cyan-600 text-white px-6 py-4 rounded-xl hover:shadow-2xl transition-all flex items-center justify-center gap-2 group"
               >
                 Send Message
                 <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
