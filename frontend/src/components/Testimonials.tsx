@@ -53,7 +53,7 @@ export default function Testimonials() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl text-gray-900 mb-4">
+          <h2 className="text-3xl font-semibold sm:text-4xl text-gray-900 mb-4">
             What Our Clients Say
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -76,10 +76,10 @@ export default function Testimonials() {
               variants={itemVariants}
               whileHover={{ y: -8 }}
               transition={{ duration: 0.3 }}
-              className="relative p-8 rounded-2xl bg-gradient-to-br from-gray-50 to-blue-50 hover:shadow-2xl transition-all"
+              className="relative p-8 rounded-2xl bg-gradient-to-br from-cyan-50 to-teal-50 hover:shadow-2xl transition-all"
             >
               {/* Quote icon */}
-              <Quote className="absolute top-4 right-4 w-10 h-10 text-blue-600 opacity-20" />
+              <Quote className="absolute top-4 right-4 w-10 h-10 text-teal-600 opacity-20" />
 
               {/* Rating */}
               <div className="flex gap-1 mb-4">
@@ -91,7 +91,7 @@ export default function Testimonials() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.3, delay: i * 0.1 }}
                   >
-                    <Star className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                    <Star className="w-5 h-5 fill-teal-400 text-teal-400" />
                   </motion.div>
                 ))}
               </div>
