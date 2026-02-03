@@ -11,7 +11,7 @@ const stats = [
 
 export default function Stats() {
   return (
-    <section className="relative overflow-hidden py-20 bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-600">
+    <section className="relative overflow-hidden py-20 bg-gradient-to-br from-teal-600 via-cyan-600 to-blue-600">
       
       {/* Animated background blobs */}
       <motion.div
@@ -53,7 +53,7 @@ export default function Stats() {
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 + 0.4 }}
-                className="text-blue-100"
+                className="text-teal-100"
               >
                 {stat.label}
               </motion.div>
