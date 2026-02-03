@@ -16,7 +16,7 @@ export default function Footer() {
   return (
     <footer className="bg-gradient-to-br from-cyan-900 to-teal-800 text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-4 gap-8 mb-8">
+        <div className="grid md:grid-cols-3 gap-y-8 gap-x-32 mb-8">
 
           {/* Brand */}
           <div className="space-y-4">
@@ -50,61 +50,26 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Services */}
+          {/* Useful Links */}
           <div>
-            <h3 className="text-lg mb-4 font-semibold">Services</h3>
+            <h3 className="text-lg mb-4 font-semibold">Useful Links</h3>
             <ul className="space-y-2 text-sm text-gray-400">
               {[
-                'Inbound Support',
-                'Outbound Calling',
-                'Help Desk',
-                'Lead Generation',
-              ].map((service) => (
-                <li key={service}>
-                  <motion.span
+                { label: 'About', path: '/#' },
+                { label: 'Services', path: '/#services' },
+                { label: 'Features', path: '/#features' },
+                { label: 'Contact', path: '/contact' },
+              ].map((item) => (
+                <li key={item.label}>
+                  <motion.a
+                    href={item.path}
                     whileHover={{ x: 5 }}
                     className="hover:text-white transition-all inline-block cursor-pointer"
                   >
-                    {service}
-                  </motion.span>
+                    {item.label}
+                  </motion.a>
                 </li>
               ))}
-            </ul>
-          </div>
-
-          {/* Company */}
-          <div>
-            <h3 className="text-lg mb-4 font-semibold">Company</h3>
-            <ul className="space-y-2 text-sm text-gray-400">
-              <li>
-                <motion.span whileHover={{ x: 5 }} className="hover:text-white cursor-pointer">
-                  About Us
-                </motion.span>
-              </li>
-              <li>
-                <motion.button
-                  whileHover={{ x: 5 }}
-                  onClick={() => handleNavigation('/contact')}
-                  className="hover:text-white transition-all text-left"
-                >
-                  Contact
-                </motion.button>
-              </li>
-              <li>
-                <motion.span whileHover={{ x: 5 }} className="hover:text-white cursor-pointer">
-                  Blog
-                </motion.span>
-              </li>
-              <li>
-                <Link href="/privacy-policy">
-                  <motion.span
-                    whileHover={{ x: 5 }}
-                    className="hover:text-white transition-all inline-block"
-                  >
-                    Privacy Policy
-                  </motion.span>
-                </Link>
-              </li>
             </ul>
           </div>
 
@@ -114,11 +79,11 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-gray-400">
               <li className="flex items-center gap-2">
                 <Phone className="w-4 h-4" />
-                1-800-CALLPRO
+                00000
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
-                info@callprosolutions.com
+                hr@globalebtech.com
               </li>
             </ul>
           </div>
@@ -132,7 +97,18 @@ export default function Footer() {
           transition={{ duration: 0.6 }}
           className="border-t border-gray-700 pt-8 text-center text-sm text-gray-400"
         >
-          <p>&copy; 2026 CallPro Solutions. All rights reserved.</p>
+          <p>&copy; 2026 Global EB Tech. All rights reserved.</p>
+          <p className="mt-2">
+            Powered by:{' '}
+            <a 
+              href="https://digizone.lk" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-teal-400 hover:text-teal-300 transition-colors"
+            >
+              DigiZone.lk
+            </a>
+          </p>
         </motion.div>
       </div>
     </footer>

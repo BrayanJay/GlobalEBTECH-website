@@ -1,8 +1,8 @@
 'use client';
 
-import { Mail, Phone, MapPin, Send, Clock, MessageSquare, Headphones, Globe } from 'lucide-react';
-import { useState } from 'react';
+import { Mail, Phone, MapPin, Clock, MessageSquare, Headphones, Globe } from 'lucide-react';
 import { motion } from 'motion/react';
+import { ContactForm } from './ContactForm';
 
 const contactMethods = [
   {
@@ -50,28 +50,6 @@ const offices = [
 ];
 
 export default function ContactPage() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    company: '',
-    service: '',
-    message: '',
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    alert('Thank you for your interest! We will contact you shortly.');
-    setFormData({ name: '', email: '', phone: '', company: '', service: '', message: '' });
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
-
   return (
     <main className="min-h-screen pt-16">
       {/* Hero Section */}
@@ -144,120 +122,7 @@ export default function ContactPage() {
             {/* Contact Form */}
             <motion.div initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="bg-white p-8 rounded-2xl shadow-xl">
               <h3 className="text-2xl text-gray-900 mb-6">Send Us a Message</h3>
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div>
-                    <label htmlFor="name" className="block text-sm text-gray-700 mb-2 font-medium">
-                      Full Name *
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      required
-                      value={formData.name}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-600 transition-all"
-                      placeholder="John Doe"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="email" className="block text-sm text-gray-700 mb-2 font-medium">
-                      Email Address *
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      required
-                      value={formData.email}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-600 transition-all"
-                      placeholder="john@company.com"
-                    />
-                  </div>
-                </div>
-
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div>
-                    <label htmlFor="phone" className="block text-sm text-gray-700 mb-2 font-medium">
-                      Phone Number
-                    </label>
-                    <input
-                      type="tel"
-                      id="phone"
-                      name="phone"
-                      value={formData.phone}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-600 transition-all"
-                      placeholder="0771234567"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="company" className="block text-sm text-gray-700 mb-2 font-medium">
-                      Company Name (Optional)
-                    </label>
-                    <input
-                      type="text"
-                      id="company"
-                      name="company"
-                      value={formData.company}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-600 transition-all"
-                      placeholder="Your Company"
-                    />
-                  </div>
-                </div>
-
-                {/*
-                <div>
-                  <label htmlFor="service" className="block text-sm text-gray-700 mb-2 font-medium">
-                    Service Interested In
-                  </label>
-                  <select
-                    id="service"
-                    name="service"
-                    value={formData.service}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-600 transition-all"
-                  >
-                    <option value="">Select a service</option>
-                    <option value="inbound">Inbound Support</option>
-                    <option value="outbound">Outbound Calling</option>
-                    <option value="helpdesk">Help Desk Services</option>
-                    <option value="lead">Lead Generation</option>
-                    <option value="qa">Quality Assurance</option>
-                    <option value="24-7">24/7 Support</option>
-                  </select>
-                </div>
-                */}
-
-                <div>
-                  <label htmlFor="message" className="block text-sm text-gray-700 mb-2 font-medium">
-                    Message *
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    required
-                    value={formData.message}
-                    onChange={handleChange}
-                    rows={5}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-600 transition-all"
-                    placeholder="Tell us about your needs..."
-                  />
-                </div>
-
-                <motion.button
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                  type="submit"
-                  className="w-full bg-gradient-to-r from-teal-600 to-cyan-600 text-white px-6 py-4 rounded-xl hover:shadow-2xl transition-all flex items-center justify-center gap-2 group"
-                >
-                  Send Message
-                  <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </motion.button>
-              </form>
+              <ContactForm />
             </motion.div>
 
             {/* Business Hours & Quick Info */}
