@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { Phone, Mail, Linkedin, Twitter, Facebook } from 'lucide-react';
+import { Phone, Mail, Linkedin, Twitter, Facebook, Clock, MapPin } from 'lucide-react';
 import { motion } from 'motion/react';
 import Image from 'next/image';
 
@@ -40,7 +40,7 @@ export default function Footer() {
             </motion.div>
 
             <p className="text-gray-400 text-sm">
-              Professional call center solutions for businesses of all sizes.
+              Global EB Tech provides professional BPO, digital solutions, branding, event management, and technical consultancy services for businesses across Sri Lanka and worldwide.
             </p>
 
             <div className="flex gap-4">
@@ -87,11 +87,18 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-gray-400">
               <li className="flex items-center gap-2">
                 <Phone className="w-4 h-4" />
-                00000
+                +94 770 677 157
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
-                hr@globalebtech.com
+                NEED TO CREATE
+              </li>
+              <li className="flex items-center gap-2">
+                <MapPin className="w-4 h-4" />85C, 1/2, Galle Road, Dehiwala, Sri Lanka
+              </li>
+              <li className="flex items-center gap-2 text-gray-200">
+                <Clock className="w-4 h-4" />
+                Business Hours: Mon – Sat | 11:00AM – 08:00PM
               </li>
             </ul>
           </div>

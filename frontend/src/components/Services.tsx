@@ -1,49 +1,49 @@
 'use client';
 
-import { Headphones, MessageSquare, Users, TrendingUp, Shield, Clock } from 'lucide-react';
+import { Headphones, Laptop, Megaphone, CalendarClock, MessageSquareMore, Workflow  } from 'lucide-react';
 import { motion } from 'motion/react';
 
 const services = [
   {
     icon: Headphones,
-    title: 'Inbound Support',
+    title: 'BPO & Call Center Operations',
     description:
-      'Professional customer service representatives handling all your incoming calls with care and expertise.',
-    gradient: 'from-blue-500 to-cyan-500',
+      'Professional inbound and outbound call handling, recovery call units, helpdesks, and full customer service outsourcing designed to improve customer engagement and operational efficiency.',
+    gradient: 'from-blue-500 to-cyan-600',
   },
   {
-    icon: MessageSquare,
-    title: 'Outbound Calling',
+    icon: Laptop,
+    title: 'Digital Solutions Development',
     description:
-      'Strategic outreach campaigns for sales, surveys, appointments, and customer follow-ups.',
+      'Website development, mobile applications, system portals, and custom digital platforms built to streamline your business processes and enhance your digital presence.',
     gradient: 'from-purple-500 to-pink-500',
   },
   {
-    icon: Users,
-    title: 'Help Desk Services',
+    icon: Megaphone,
+    title: 'Advertising & Creative Design',
     description:
-      'Technical support and troubleshooting assistance for your customers around the clock.',
+      'Digital banners, posters, logos, social media creatives, and complete branding materials crafted to communicate your brand professionally and attractively.',
     gradient: 'from-green-500 to-emerald-500',
   },
   {
-    icon: TrendingUp,
-    title: 'Lead Generation',
+    icon: CalendarClock,
+    title: 'Event Organization & Activation',
     description:
-      'Qualify and nurture leads to help grow your business with targeted calling strategies.',
+      'End-to-end event management, promotional activations, campaign materials, banners, stalls, and complete on-ground branding execution.',
     gradient: 'from-orange-500 to-red-500',
   },
   {
-    icon: Shield,
-    title: 'Quality Assurance',
+    icon: MessageSquareMore,
+    title: 'Technical Support & Consultancy',
     description:
-      'Regular monitoring and training to ensure the highest standards of customer service.',
+      'Hosting solutions, system guidance, digital behavior consultancy, infrastructure advice, and reliable technical support for smooth business operations.',
     gradient: 'from-indigo-500 to-purple-500',
   },
   {
-    icon: Clock,
-    title: '24/7 Availability',
+    icon: Workflow,
+    title: 'Business Process Automation',
     description:
-      'Round-the-clock service to support your customers across all time zones.',
+      'Workflow automation, digital form conversions, approval systems, CRM/lead management setup, and operational digitization to reduce manual work and increase productivity.',
     gradient: 'from-teal-500 to-blue-500',
   },
 ];
@@ -78,7 +78,7 @@ export default function Services() {
             Our Services
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Comprehensive call center solutions tailored to meet your business needs
+            Comprehensive business solutions designed to strengthen your operations, elevate your brand, and accelerate your digital presence.
           </p>
         </motion.div>
 

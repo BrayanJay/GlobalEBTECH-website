@@ -8,15 +8,15 @@ const contactMethods = [
   {
     icon: Phone,
     title: 'Call Us',
-    info: '00000',
+    info: '+94 770 677 157',
     subInfo: 'During business hours',
-    gradient: 'from-teal-500 to-cyan-500',
-    link: 'tel:00000',
+    gradient: 'from-teal-500 to-cyan-600',
+    link: 'tel:+94770677157',
   },
   {
     icon: Mail,
     title: 'Email Us',
-    info: 'hr@globalebtech.com',
+    info: 'NEED TO CREATE',
     subInfo: 'We respond within 24 hours',
     gradient: 'from-blue-500 to-pink-500',
     link: 'mailto:hr@globalebtech.com',
@@ -25,17 +25,9 @@ const contactMethods = [
     icon: MessageSquare,
     title: 'Live Chat',
     info: 'Chat with our team',
-    subInfo: 'Mon-Fri: 11am-8pm EST',
+    subInfo: 'Instant assistance',
     gradient: 'from-green-500 to-emerald-500',
     link: '#',
-  },
-  {
-    icon: Headphones,
-    title: 'Support',
-    info: 'support@globalebtech.com',
-    subInfo: 'Technical assistance',
-    gradient: 'from-orange-500 to-red-500',
-    link: 'mailto:support@globalebtech.com',
   },
 ];
 
@@ -44,8 +36,8 @@ const offices = [
     city: 'Dehiwala (Head Office)',
     address: '85C, 1/2, Galle Road, Dehiwala',
     cityState: '10350, Western Province, Sri Lanka',
-    phone: '00000',
-    email: 'hr@globalebtech.com',
+    phone: '+94 770 677 157',
+    email: 'NEED TO CREATE',
   }
 ];
 
@@ -53,7 +45,7 @@ export default function ContactPage() {
   return (
     <main className="min-h-screen pt-16">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-teal-600 via-cyan-600 to-blue-600 py-20 lg:py-32 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-teal-800 via-cyan-700 to-teal-800 py-20 lg:py-32 overflow-hidden">
         <motion.div
           animate={{ scale: [1, 1.2, 1], rotate: [0, 90, 0] }}
           transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
@@ -73,7 +65,7 @@ export default function ContactPage() {
             </motion.div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl leading-tight">Get In Touch With Us</h1>
             <p className="text-lg text-teal-100 max-w-2xl mx-auto">
-              Have questions about our services? We'd love to hear from you. Our team is ready to help you find the perfect solution for your business.
+              Have questions about our services? Our team is ready to support your business needs.
             </p>
           </motion.div>
         </div>
@@ -87,7 +79,7 @@ export default function ContactPage() {
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">Choose your preferred way to reach us</p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {contactMethods.map((method, index) => (
               <motion.a
                 key={index}
@@ -127,15 +119,19 @@ export default function ContactPage() {
 
             {/* Business Hours & Quick Info */}
             <motion.div initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="space-y-6">
-              <div className="bg-gradient-to-br from-teal-600 to-cyan-600 text-white p-8 rounded-2xl shadow-xl">
+              <div className="bg-gradient-to-br from-teal-800 to-cyan-700 text-white p-8 rounded-2xl shadow-xl">
                 <div className="flex items-center gap-3 mb-6">
                   <Clock className="w-8 h-8" />
                   <h3 className="text-2xl font-semibold">Business Hours</h3>
                 </div>
                 <div className="space-y-3">
                   <div className="flex justify-between items-center pb-3 border-b border-white/20">
-                    <span className="text-teal-100">Monday - Friday:</span>
-                    <span className="font-semibold">11.00AM to 08.00PM</span>
+                    <span className="text-teal-100">Monday - Saturday:</span>
+                    <span className="font-semibold">11:00 AM to 08:00 PM</span>
+                  </div>
+                  <div className="flex justify-between items-center pb-3 border-b border-white/20">
+                    <span className="text-teal-100">Sunday & Mercantile Holidays</span>
+                    <span className="font-semibold">Not Available</span>
                   </div>
                 </div>
                 <p className="text-sm text-teal-100 mt-6 italic">
@@ -157,7 +153,7 @@ export default function ContactPage() {
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="bg-teal-100 p-2 rounded-lg">
-                      <Mail className="w-5 h-5 text-teal-600" />
+                      <Mail className="w-5 h-5 text-teal-800" />
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900">Emails</h4>
@@ -208,7 +204,7 @@ export default function ContactPage() {
                 className="flex flex-col lg:flex-row gap-6 lg:gap-10 bg-gradient-to-br from-gray-50 to-teal-50 p-6 rounded-2xl border border-gray-200 hover:shadow-xl transition-all"
               >
                   <div className="lg:w-1/3">
-                    <div className="bg-gradient-to-br from-teal-500 to-cyan-600 w-12 h-12 rounded-xl flex items-center justify-center mb-4">
+                    <div className="bg-gradient-to-br from-teal-500 to-cyan-700 w-12 h-12 rounded-xl flex items-center justify-center mb-4">
                       <MapPin className="w-6 h-6 text-white" />
                     </div>
                     <h3 className="text-xl text-gray-900 mb-3 font-semibold">{office.city}</h3>
@@ -244,7 +240,7 @@ export default function ContactPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-teal-600 via-cyan-600 to-blue-600">
+      <section className="py-20 bg-gradient-to-br from-teal-800 via-cyan-700 to-teal-800">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -262,7 +258,7 @@ export default function ContactPage() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 href="tel:00000"
-                className="bg-white text-teal-600 px-16 py-4 rounded-xl font-semibold hover:shadow-2xl transition-all inline-flex items-center justify-center gap-2"
+                className="bg-white text-teal-800 px-16 py-4 rounded-xl font-semibold hover:shadow-2xl transition-all inline-flex items-center justify-center gap-2"
               >
                 <Phone className="w-5 h-5" />
                 Call Now

@@ -3,15 +3,15 @@
 import { motion } from 'motion/react';
 
 const stats = [
-  { value: '10M+', label: 'Calls Handled' },
-  { value: '500+', label: 'Happy Clients' },
-  { value: '98%', label: 'Customer Satisfaction' },
+  { value: '12+', label: 'Years Experienced Crew' },
+  { value: '100+', label: 'Projects Completed' },
+  { value: '95%', label: 'Customer Satisfaction' },
   { value: '24/7', label: 'Support Available' },
 ];
 
 export default function Stats() {
   return (
-    <section className="relative overflow-hidden py-20 bg-gradient-to-br from-teal-600 via-cyan-600 to-blue-600">
+    <section className="relative overflow-hidden py-20 bg-gradient-to-br from-teal-800 via-cyan-700 to-teal-800">
       
       {/* Animated background blobs */}
       <motion.div

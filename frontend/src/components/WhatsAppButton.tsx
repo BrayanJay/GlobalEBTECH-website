@@ -3,7 +3,7 @@
 import Image from 'next/image';
 
 export default function WhatsAppButton() {
-  const phoneNumber = '94771234567'; // use country code, no +
+  const phoneNumber = '94770677157';
   const message = encodeURIComponent(
     'Hi! I am interested in your services. Can you help me?'
   );

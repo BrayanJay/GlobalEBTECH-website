@@ -5,24 +5,24 @@ import { motion } from 'motion/react';
 
 const testimonials = [
   {
-    name: 'Sarah Johnson',
-    company: 'Tech Innovations Inc.',
+    name: 'John Adams',
+    company: '',
     content:
-      'CallPro Solutions transformed our customer service. Their team is professional, responsive, and truly cares about our customers.',
+      'Global EB Tech managed our outbound call operations with great professionalism. Their team improved our customer response rate within weeks.',
+    rating: 4,
+  },
+  {
+    name: 'Jeewanraj',
+    company: '',
+    content:
+      'They designed our website, social media creatives, and digital banners with excellent quality. Very easy team to work with.',
     rating: 5,
   },
   {
-    name: 'Michael Chen',
-    company: 'Global Retail Group',
+    name: 'Sindujan',
+    company: '',
     content:
-      'Outstanding service! The 24/7 support has been a game-changer for our international customer base.',
-    rating: 5,
-  },
-  {
-    name: 'Emily Rodriguez',
-    company: 'Healthcare Partners',
-    content:
-      "We've seen a 40% increase in customer satisfaction since partnering with CallPro. Highly recommended!",
+      "From event branding to stall setup and promotional materials, everything was handled perfectly and on time.",
     rating: 5,
   },
 ];
@@ -58,7 +58,7 @@ export default function Testimonials() {
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Don&apos;t just take our word for it — hear from businesses that trust
-            us with their customer communications
+            Global EB Tech
           </p>
         </motion.div>
 
@@ -79,7 +79,7 @@ export default function Testimonials() {
               className="relative p-8 rounded-2xl bg-gradient-to-br from-cyan-50 to-teal-50 hover:shadow-2xl transition-all"
             >
               {/* Quote icon */}
-              <Quote className="absolute top-4 right-4 w-10 h-10 text-teal-600 opacity-20" />
+              <Quote className="absolute top-4 right-4 w-10 h-10 text-teal-800 opacity-20" />
 
               {/* Rating */}
               <div className="flex gap-1 mb-4">

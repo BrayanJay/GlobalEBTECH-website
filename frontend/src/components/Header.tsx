@@ -73,36 +73,36 @@ export function Header() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               onClick={() => handleNavClick('/', '#services')}
-              className="text-gray-700 hover:text-teal-600 transition-colors relative group"
+              className="text-gray-700 hover:text-teal-800 transition-colors relative group"
             >
               Services
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-teal-600 transition-all group-hover:w-full"></span>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-teal-800 transition-all group-hover:w-full"></span>
             </motion.button>
             <motion.button
               whileHover={{ scale: 1.05 }}
               onClick={() => handleNavClick('/', '#features')}
-              className="text-gray-700 hover:text-teal-600 transition-colors relative group"
+              className="text-gray-700 hover:text-teal-800 transition-colors relative group"
             >
               Features
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-teal-600 transition-all group-hover:w-full"></span>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-teal-800 transition-all group-hover:w-full"></span>
             </motion.button>
             <motion.button
               whileHover={{ scale: 1.05 }}
               onClick={() => handleNavClick('/', '#testimonials')}
-              className="text-gray-700 hover:text-teal-600 transition-colors relative group"
+              className="text-gray-700 hover:text-teal-800 transition-colors relative group"
             >
               Testimonials
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-teal-600 transition-all group-hover:w-full"></span>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-teal-800 transition-all group-hover:w-full"></span>
             </motion.button>
             <motion.button
               whileHover={{ scale: 1.05 }}
               onClick={() => handleNavClick('/contact')}
               className={`transition-colors relative group ${
-                pathname === '/contact' ? 'text-teal-600' : 'text-gray-700 hover:text-teal-600'
+                pathname === '/contact' ? 'text-teal-800' : 'text-gray-700 hover:text-teal-800'
               }`}
             >
               Contact
-              <span className={`absolute -bottom-1 left-0 h-0.5 bg-teal-600 transition-all ${
+              <span className={`absolute -bottom-1 left-0 h-0.5 bg-teal-800 transition-all ${
                 pathname === '/contact' ? 'w-full' : 'w-0 group-hover:w-full'
               }`}></span>
             </motion.button>
@@ -110,7 +110,7 @@ export function Header() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => handleNavClick('/contact', '#contact-form')}
-              className="bg-gradient-to-r from-teal-600 to-cyan-600 text-white font-semibold px-8 py-2 rounded-lg shadow-lg hover:shadow-xl transition-all"
+              className="bg-gradient-to-r from-teal-800 to-cyan-700 text-white font-semibold px-8 py-2 rounded-lg shadow-lg hover:shadow-xl transition-all"
             >
               Call Now
             </motion.button>
@@ -144,35 +144,35 @@ export function Header() {
                 <motion.button
                   whileTap={{ scale: 0.95 }}
                   onClick={() => handleNavClick('/', '#services')}
-                  className="text-gray-700 hover:text-teal-600 transition-colors text-left"
+                  className="text-gray-700 hover:text-teal-800 transition-colors text-left"
                 >
                   Services
                 </motion.button>
                 <motion.button
                   whileTap={{ scale: 0.95 }}
                   onClick={() => handleNavClick('/', '#features')}
-                  className="text-gray-700 hover:text-teal-600 transition-colors text-left"
+                  className="text-gray-700 hover:text-teal-800 transition-colors text-left"
                 >
                   Features
                 </motion.button>
                 <motion.button
                   whileTap={{ scale: 0.95 }}
                   onClick={() => handleNavClick('/', '#testimonials')}
-                  className="text-gray-700 hover:text-teal-600 transition-colors text-left"
+                  className="text-gray-700 hover:text-teal-800 transition-colors text-left"
                 >
                   Testimonials
                 </motion.button>
                 <motion.button
                   whileTap={{ scale: 0.95 }}
                   onClick={() => handleNavClick('/contact')}
-                  className="text-gray-700 hover:text-teal-600 transition-colors text-left"
+                  className="text-gray-700 hover:text-teal-800 transition-colors text-left"
                 >
                   Contact
                 </motion.button>
                 <motion.button
                   whileTap={{ scale: 0.95 }}
                   onClick={() => handleNavClick('/contact', '#contact-form')}
-                  className="bg-gradient-to-r from-teal-600 to-cyan-600 text-white px-6 py-2 rounded-lg text-center shadow-lg"
+                  className="bg-gradient-to-r from-teal-800 to-cyan-700 text-white px-6 py-2 rounded-lg text-center shadow-lg"
                 >
                   Call Now
                 </motion.button>

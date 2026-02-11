@@ -5,14 +5,14 @@ import { CheckCircle } from 'lucide-react';
 import { motion } from 'motion/react';
 
 const features = [
-  'Multilingual support in 15+ languages',
-  'Advanced call routing technology',
-  'Real-time reporting and analytics',
-  'Custom scripting and workflows',
-  'CRM integration capabilities',
-  'Secure and compliant operations',
-  'Dedicated account management',
-  'Scalable solutions for growing businesses',
+  'A unique blend of digital expertise and on-ground execution capabilities',
+  'Experienced professionals in customer engagement and call center management',
+  'End-to-end support from planning to implementation',
+  'Reliable, responsive, and people-focused service approach',
+  'Island-wide and international service delivery from our Dehiwala base',
+  'Cost-effective outsourcing partner for growing businesses',
+  'Strong focus on quality, branding, and user experience',
+  'Scalable solutions suitable for startups to large enterprises',
 ];
 
 export default function Features() {
@@ -52,9 +52,9 @@ export default function Features() {
             className="space-y-6"
           >
             <h2 className="text-3xl sm:text-4xl text-gray-900 font-semibold">
-              Why Choose{' '}
-              <span className="bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent">
-                CallPro Solutions
+              Why Choose {' '}
+              <span className="bg-gradient-to-r from-teal-800 to-cyan-700 bg-clip-text text-transparent">
+                Global EB Tech
               </span>
               ?
             </h2>

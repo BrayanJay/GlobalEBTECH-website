@@ -15,9 +15,9 @@ export function Contact() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl text-gray-900 mb-4">Get In Touch</h2>
+          <h2 className="text-3xl sm:text-4xl font-semibold text-gray-900 mb-4">Get In Touch</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Ready to elevate your customer service? Contact us today for a free consultation
+            Ready to improve your operations, branding, or digital presence? Contact us today for a consultation.
           </p>
         </motion.div>
 
@@ -36,7 +36,7 @@ export function Contact() {
                   whileHover={{ x: 5 }}
                   className="flex items-start gap-4 p-4 rounded-xl hover:bg-white/50 transition-all"
                 >
-                  <div className="bg-gradient-to-br from-teal-500 to-cyan-600 p-3 rounded-xl shadow-lg">
+                  <div className="bg-gradient-to-br from-teal-800 to-cyan-700 p-3 rounded-xl shadow-lg">
                     <Phone className="w-6 h-6 text-white" />
                   </div>
                   <div>
@@ -80,7 +80,7 @@ export function Contact() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="bg-gradient-to-br from-teal-600 to-cyan-600 text-white p-8 rounded-2xl shadow-xl"
+              className="bg-gradient-to-br from-teal-800 to-cyan-700 text-white p-8 rounded-2xl shadow-xl"
             >
               <h3 className="text-xl mb-2">Business Hours</h3>
               <div className="space-y-2">

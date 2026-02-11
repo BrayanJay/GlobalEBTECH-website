@@ -39,7 +39,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-teal-600 to-cyan-600 text-white px-3 py-1.5 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm shadow-lg"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-teal-800 to-cyan-700 text-white px-3 py-1.5 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm shadow-lg"
             >
               <Sparkles className="w-3 h-3 sm:w-4 sm:h-4" />
               Trusted by 500+ Companies
@@ -51,9 +51,9 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold lg:font-bold text-gray-900 leading-tight"
             >
-              Professional Call Center{' '}
-              <span className="bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent">
-                Solutions
+              Empowering Businesses with{' '}
+              <span className="bg-gradient-to-r from-teal-800 to-cyan-700 bg-clip-text text-transparent">
+                Digital Innovation
               </span>
             </motion.h1>
 
@@ -63,9 +63,7 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed font-normal lg:font-medium max-w-lg"
             >
-              Elevate your customer service with our 24/7 call center solutions.
-              We provide expert support, seamless communication, and exceptional
-              customer experiences.
+              At Global EB Tech, we combine technology, creativity, and operational expertise to deliver digital, physical, and customer engagement solutions that help your business grow locally and globally.
             </motion.p>
 
             <motion.div
@@ -78,7 +76,7 @@ export default function Hero() {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   href="tel:000000"
-                  className="bg-gradient-to-r from-teal-600 to-cyan-600 text-white text-sm sm:text-base font-medium px-8 sm:px-12 md:px-16 py-3 sm:py-4 rounded-xl hover:shadow-2xl transition-all flex items-center justify-center gap-2 group cursor-pointer">
+                  className="bg-gradient-to-r from-teal-800 to-cyan-700 text-white text-sm sm:text-base font-medium px-8 sm:px-12 md:px-16 py-3 sm:py-4 rounded-xl hover:shadow-2xl transition-all flex items-center justify-center gap-2 group cursor-pointer">
                   Call Now
                   <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
                 </motion.a>
