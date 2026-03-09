@@ -16,6 +16,7 @@
     "@sanity/image-url": "^2.0.3",
     "@sanity/types": "^5.5.0",
     "@sanity/vision": "^5.5.0",
+    "class-variance-authority": "^0.7.1",
     "lucide-react": "^0.562.0",
     "next": "16.1.4",
     "next-sanity": "^12.0.14",
