@@ -41,7 +41,7 @@ export function Contact() {
                   </div>
                   <div>
                     <div className="text-gray-900 font-semibold">Phone</div>
-                    <div className="text-gray-600">000000</div>
+                    <div className="text-gray-600">+94 770 677 157</div>
                   </div>
                 </motion.div>
                 <motion.div
@@ -53,7 +53,7 @@ export function Contact() {
                   </div>
                   <div>
                     <div className="text-gray-900 font-semibold">Email</div>
-                    <div className="text-gray-600">hr@globalebtech.com</div>
+                    <div className="text-gray-600">info@globalebtech.com</div>
                   </div>
                 </motion.div>
                 <motion.div

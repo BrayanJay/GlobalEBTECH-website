@@ -10,14 +10,20 @@ import { usePathname, useRouter } from 'next/navigation';
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [hidden, setHidden] = useState(false);
   const pathname = usePathname();
   const router = useRouter();
 
   useEffect(() => {
+    let lastScrollY = window.scrollY;
+
     const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
+      const currentScrollY = window.scrollY;
+      setScrolled(currentScrollY > 20);
+      setHidden(currentScrollY > lastScrollY && currentScrollY > 80);
+      lastScrollY = currentScrollY;
     };
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -41,8 +47,8 @@ export function Header() {
   return (
     <motion.header
       initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.5 }}
+      animate={{ y: hidden ? -100 : 0 }}
+      transition={{ duration: 0.3 }}
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
         scrolled ? 'bg-white/95 backdrop-blur-lg shadow-lg' : 'bg-white shadow-sm'
       }`}

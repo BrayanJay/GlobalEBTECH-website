@@ -1,6 +1,6 @@
 'use client';
 
-import { Headphones, Laptop, Megaphone, CalendarClock, MessageSquareMore, Workflow  } from 'lucide-react';
+import { Headphones, Laptop, Megaphone, CalendarClock, Workflow, Users  } from 'lucide-react';
 import { motion } from 'motion/react';
 
 const services = [
@@ -33,10 +33,10 @@ const services = [
     gradient: 'from-orange-500 to-red-500',
   },
   {
-    icon: MessageSquareMore,
-    title: 'Technical Support & Consultancy',
+    icon: Users,
+    title: 'Leads Generation',
     description:
-      'Hosting solutions, system guidance, digital behavior consultancy, infrastructure advice, and reliable technical support for smooth business operations.',
+      'Targeted lead generation campaigns, CRM setup, and digital marketing strategies designed to attract and convert potential customers effectively.',
     gradient: 'from-indigo-500 to-purple-500',
   },
   {
@@ -63,7 +63,7 @@ const itemVariants = {
 
 export default function Services() {
   return (
-    <section id="services" className="py-20 bg-white">
+    <section id="services" className="py-8 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Heading */}

@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { Phone, Mail, Linkedin, Twitter, Facebook, Clock, MapPin } from 'lucide-react';
+import { Phone, Mail, Linkedin, Twitter, Facebook, Clock, MapPin, Instagram } from 'lucide-react';
 import { motion } from 'motion/react';
 import Image from 'next/image';
 
@@ -44,15 +44,15 @@ export default function Footer() {
             </p>
 
             <div className="flex gap-4">
-              {[Facebook, Twitter, Linkedin].map((Icon, index) => (
+              {[{ icon: Facebook, url: "https://www.facebook.com/share/1Gc7W4o6P1/?mibextid=wwXIfr" }, { icon: Instagram, url: "https://www.instagram.com/global_ebtech?igsh=aWx3ZW9qOTV6MnNx" }].map((item, index) => (
                 <motion.a
                   key={index}
                   whileHover={{ scale: 1.2, rotate: 5 }}
                   whileTap={{ scale: 0.9 }}
-                  href="#"
+                  href={item.url}
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  <Icon className="w-5 h-5" />
+                  <item.icon className="w-5 h-5" />
                 </motion.a>
               ))}
             </div>
@@ -91,14 +91,14 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
-                NEED TO CREATE
+                info@globalebtech.com
               </li>
               <li className="flex items-center gap-2">
                 <MapPin className="w-4 h-4" />85C, 1/2, Galle Road, Dehiwala, Sri Lanka
               </li>
               <li className="flex items-center gap-2 text-gray-200">
                 <Clock className="w-4 h-4" />
-                Business Hours: Mon – Sat | 11:00AM – 08:00PM
+                Business Hours: Mon – Fri | 11:00AM – 08:00PM
               </li>
             </ul>
           </div>
