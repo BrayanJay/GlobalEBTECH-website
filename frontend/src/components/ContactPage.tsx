@@ -1,6 +1,6 @@
 'use client';
 
-import { Mail, Phone, MapPin, Clock, MessageSquare, Headphones, Globe } from 'lucide-react';
+import { Mail, Phone, MapPin, Clock, MessageSquare, Headphones, Globe, Facebook, Instagram, } from 'lucide-react';
 import { motion } from 'motion/react';
 import { ContactForm } from './ContactForm';
 
@@ -16,7 +16,7 @@ const contactMethods = [
   {
     icon: Mail,
     title: 'Email Us',
-    info: 'NEED TO CREATE',
+    info: 'info@globalebtech.com',
     subInfo: 'We respond within 24 hours',
     gradient: 'from-blue-500 to-pink-500',
     link: 'mailto:hr@globalebtech.com',
@@ -37,7 +37,7 @@ const offices = [
     address: '85C, 1/2, Galle Road, Dehiwala',
     cityState: '10350, Western Province, Sri Lanka',
     phone: '+94 770 677 157',
-    email: 'NEED TO CREATE',
+    email: 'info@globalebtech.com',
   }
 ];
 
@@ -126,12 +126,8 @@ export default function ContactPage() {
                 </div>
                 <div className="space-y-3">
                   <div className="flex justify-between items-center pb-3 border-b border-white/20">
-                    <span className="text-teal-100">Monday - Saturday:</span>
+                    <span className="text-teal-100">Monday - Friday:</span>
                     <span className="font-semibold">11:00 AM to 08:00 PM</span>
-                  </div>
-                  <div className="flex justify-between items-center pb-3 border-b border-white/20">
-                    <span className="text-teal-100">Sunday & Mercantile Holidays</span>
-                    <span className="font-semibold">Not Available</span>
                   </div>
                 </div>
                 <p className="text-sm text-teal-100 mt-6 italic">
@@ -235,6 +231,92 @@ export default function ContactPage() {
                     </div>
               </motion.div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Social Media Section */}
+      <section className="py-20 bg-gradient-to-br from-gray-50 to-teal-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-3xl sm:text-4xl text-gray-900 font-semibold mb-4">Connect With Us</h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Follow us on social media to stay updated with our latest news and services
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            <motion.a
+              href="https://www.facebook.com/share/1Gc7W4o6P1/?mibextid=wwXIfr"
+              target="_blank"
+              rel="noopener noreferrer"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              whileHover={{ y: -8 }}
+              className="bg-white p-8 rounded-2xl border-2 border-gray-200 hover:border-blue-500 hover:shadow-xl transition-all text-center group"
+            >
+              <motion.div
+                whileHover={{ rotate: 360 }}
+                transition={{ duration: 0.6 }}
+                className="bg-gradient-to-br from-blue-500 to-blue-700 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg"
+              >
+                <Facebook className="w-8 h-8 text-white" />
+              </motion.div>
+              <h3 className="text-xl text-gray-900 mb-2 font-semibold">Facebook</h3>
+              <p className="text-sm text-gray-600">Follow our page</p>
+            </motion.a>
+
+            <motion.a
+              href="https://www.instagram.com/global_ebtech?igsh=aWx3ZW9qOTV6MnNx"
+              target="_blank"
+              rel="noopener noreferrer"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              whileHover={{ y: -8 }}
+              className="bg-white p-8 rounded-2xl border-2 border-gray-200 hover:border-pink-500 hover:shadow-xl transition-all text-center group"
+            >
+              <motion.div
+                whileHover={{ rotate: 360 }}
+                transition={{ duration: 0.6 }}
+                className="bg-gradient-to-br from-pink-500 via-purple-500 to-orange-500 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg"
+              >
+                <Instagram className="w-8 h-8 text-white" />
+              </motion.div>
+              <h3 className="text-xl text-gray-900 mb-2 font-semibold">Instagram</h3>
+              <p className="text-sm text-gray-600">Check our updates</p>
+            </motion.a>
+
+            <motion.a
+              href="https://wa.me/94770677157"
+              target="_blank"
+              rel="noopener noreferrer"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              whileHover={{ y: -8 }}
+              className="bg-white p-8 rounded-2xl border-2 border-gray-200 hover:border-green-500 hover:shadow-xl transition-all text-center group"
+            >
+              <motion.div
+                whileHover={{ rotate: 360 }}
+                transition={{ duration: 0.6 }}
+                className="bg-gradient-to-br from-green-500 to-green-700 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg"
+              >
+                <MessageSquare className="w-8 h-8 text-white" />
+              </motion.div>
+              <h3 className="text-xl text-gray-900 mb-2 font-semibold">WhatsApp</h3>
+              <p className="text-sm text-gray-600">Chat with us directly</p>
+            </motion.a>
           </div>
         </div>
       </section>
