@@ -1,57 +1,18 @@
-# Dependencies
+# Ignore everything by default
+/*
+
+# Except the frontend folder
+!frontend/
+!frontend/**
+
+# Except this gitignore itself
+!.gitignore
+
+# Also exclude common Next.js/Node stuff from root if they appear
 node_modules/
-.pnp
-.pnp.js
-
-# Testing
-coverage/
-
-# Next.js
 .next/
 out/
 build/
 dist/
-
-# Production
-/build
-
-# Misc
+.env*
 .DS_Store
-*.pem
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# Debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnpm-debug.log*
-
-# IDEs
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# OS
-Thumbs.db
-
-# Sanity
-.sanity/
-dist/
-
-# Vercel
-.vercel
-
-# Project specific
-headless_cms/
-UX Case Study/
-contactPage.png
-GLOBAL EB LONG*
-landingPage.png
-Proposal Document*
-localhost_3000_.png
